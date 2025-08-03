@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kotha-cli"
+version = "1.0.0"
+authors = [
+  { name="akr4m", email="akr4m.kh@gmail.com" },
+]
+description = "A powerful CLI tool to convert video files to MP3 and transcribe them to text using Google's Gemini AI."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = ["video", "audio", "transcription", "ai", "gemini", "cli", "converter"]
+dependencies = [
+    "moviepy",
+    "google-generativeai",
+    "tqdm",
+    "click",
+    "python-dotenv",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+]
+
+[tool.setuptools]
+packages = ["kotha"]
+
+[project.scripts]
+kotha = "kotha.main:cli"

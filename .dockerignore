@@ -1,0 +1,82 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache
+.coverage
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Media files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.flv
+*.wmv
+*.m4v
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+
+# Generated content
+audio/
+text/
+*.txt
+
+# Secrets
+.env
+config.json
+.kotha/
+
+# Documentation
+docs/_build/
+site/
+
+# Testing
+.tox/
+.nox/
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak

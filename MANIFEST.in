@@ -1,0 +1,34 @@
+include LICENSE
+include README.md
+include install.py
+include install.bat
+include create_dist.py
+recursive-include kotha *.py
+
+# Exclude unnecessary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude *.egg-info
+
+# Exclude generated content
+exclude audio/*
+exclude text/*
+exclude *.mp4
+exclude *.mkv
+exclude *.avi
+exclude *.mov
+exclude *.webm
+exclude *.mp3
+exclude *.wav
+
+# Exclude development files
+exclude .env
+exclude venv/*
+exclude build/*
+exclude dist/*
+exclude *.egg-info/*
